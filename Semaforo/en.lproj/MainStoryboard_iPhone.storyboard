@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="N2f-Jn-1Ew">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - SEMAFORO-->
+        <scene sceneID="2Di-gH-PyC">
+            <objects>
+                <viewController id="AwB-sa-t2a" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d68-kV-5UA">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="semaforo.png" id="oRe-ix-rge">
+                                <rect key="frame" x="47" y="12" width="227" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4GF-SN-zme">
+                                <rect key="frame" x="125" y="44" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="rojo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a04-Um-hZc" kind="push" id="aDw-po-N9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pLh-mc-rfy">
+                                <rect key="frame" x="125" y="227" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="verde.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xcL-NJ-ArJ" kind="push" id="dLc-Vo-c0h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rVl-1z-Ozi">
+                                <rect key="frame" x="20" y="350" width="280" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" title="SEMAFORO" id="aZw-Tt-NIv"/>
+                    <connections>
+                        <outlet property="etiqueta" destination="rVl-1z-Ozi" id="wEP-Hm-MlT"/>
+                        <outlet property="rojo" destination="4GF-SN-zme" id="JVk-O3-LMt"/>
+                        <outlet property="verde" destination="pLh-mc-rfy" id="CPg-Ow-Qsp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udO-am-A1C" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ztp-ZV-vTb">
+            <objects>
+                <viewController id="a04-Um-hZc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TQ1-Bm-x5z">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Has pulsado botón ROJO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6wC-M3-g92">
+                                <rect key="frame" x="39" y="119" width="242" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HhK-eV-oKG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6E1-ka-R68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="-241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sta-5S-15T">
+            <objects>
+                <viewController id="xcL-NJ-ArJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OIg-Db-9HF">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Has pulsado botón VERDE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bb-nq-7FN">
+                                <rect key="frame" x="39" y="139" width="242" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="luI-Fj-UEf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4p-mN-P2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="acD-Sj-RQn">
+            <objects>
+                <navigationController modalTransitionStyle="flipHorizontal" id="N2f-Jn-1Ew" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="k9A-24-ewe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AwB-sa-t2a" kind="relationship" relationship="rootViewController" id="FUY-4Y-3cK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAY-dj-VYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rojo.png" width="125" height="126"/>
+        <image name="semaforo.png" width="320" height="426"/>
+        <image name="verde.png" width="188" height="189"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
